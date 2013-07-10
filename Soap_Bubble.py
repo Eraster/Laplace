@@ -1,17 +1,10 @@
 from math import*
-from turtle import*
 from random import*
-
-speed(0)
-hideturtle()
-
-screen = getscreen()
-screen.tracer(True)
 
 #-------------------------------------------------------------
 
-i = 4 # Werte in x Richtung
-j = 4 # Werte in y Richtung
+i = 3 # Werte in x Richtung
+j = 3 # Werte in y Richtung
 
 p = 100 # randint maximum
 q = 0 # randint minimum
@@ -24,20 +17,23 @@ k = [] # Berechnungsschritt
 
 h = 0 # Automatische grösse zum Berechnungsschritt
 
-r = i*i+j*j # Kontrollkonstante
+r = p # Kontrollkonstante
 
 #-------------------------------------------------------------
 
 for a in range(0, i):
+    u = []
     for b in range(0, j):
-        e = randint(q, p)
-        u.append(e)
+        u.append(randint(q, p))
     v.append(u)
 k.append(v)
+
+print(k)
         
+print("Input")
 for a in range(0, i):
     for b in range(0, j):
-        print(k[0][a][b])
+        print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
 
 #-------------------------------------------------------------
 
@@ -45,7 +41,7 @@ while r > z :
 
     h += 1
 
-    print("k = ", h)
+    #print("k = ", h)
 
     for a in range(0, i):
         for b in range(0, j):
@@ -65,8 +61,9 @@ while r > z :
     for a in range(1, i - 1):
         for b in range(1, j - 1):
             e = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4
-            f = sqrt(e*e)- k[h][a][b]
+            f = sqrt(e*e)- sqrt(k[h][a][b]*k[h][a][b])
             r = r + f
+    r = r/((i-2)*(j-2))
             
             
 
@@ -74,7 +71,7 @@ else:
     print("Berechnungstiefe: ", h)
     for a in range(0, i):
         for b in range(0, j):
-            print(k[h][a][b])
+            print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
     
             
 
