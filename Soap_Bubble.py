@@ -2,36 +2,88 @@ from math import*
 from random import*
 from turtle import*
 
+speed()
+
+hideturtle()
+
+screen = getscreen()
+screen.tracer(False)
+
+#----------
+
+global xhome
+global yhome
+
+global xline
+global yline
+global zline
+
+global zmax
+
+global ax
+global ay
+
+global xyangle
+
+#-----
+
 global k
+#global h
 
 #-------------------------------------------------------------
 
-# Frei wählbar...
+# Einstellungen
 
 i = 20 #randint(3, 25) # Werte in x Richtung
 j = 20 #randint(3, 25) # Werte in y Richtung
 
 maxinput = 100
 
-p = randint(5, maxinput) # randint maximum
-q = 0 # randint minimum
+Abweichung = 0.001 #Abweichung der Annäherung (average(i,j)-4*(i,j))
 
-z = 0.1 # Abweichung der Annäherung (average(i,j)-4*(i,j))
+#-----
+
+xhome = -300
+zhome = -250
+
+xline = 400
+yline = 250
+zline = 300
+
+xyangle = 45 #degrees
+
 
 #-------------------------------------------------------------
-#-------------------------------------------------------------
+
+# Programmstart...
+
+p = maxinput #randint(5, maxinput) # randint maximum
+q = 0        #randint minimum
+
+#-----
+
+home = (xhome, zhome)
+
+zmax = p
+
+ax = i - 1 #Anzahl x Werte -1
+ay = j - 1 #Anzahl y Werte -1
+
+#----------
 
 u = [] # u = j in der Liste
 v = [] # v = i in der Liste
 k = [] # Berechnungsschritt
 
-global h
+
 
 h = 0 # Automatische grösse zum Berechnungsschritt
 
+z = Abweichung * Abweichung
+
 r = p # Kontrollkonstante
 
-#-------------------------------------------------------------
+#-----
 
 for a in range(0, i):
     u = []
@@ -45,7 +97,7 @@ for a in range(0, i):
     for b in range(0, j):
         print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
 
-#-------------------------------------------------------------
+#-----
 
 while z*((i - 2)*(j - 2)) < r :
     
@@ -68,7 +120,8 @@ while z*((i - 2)*(j - 2)) < r :
     for a in range(1, i - 1):
         for b in range(1, j - 1):
             e = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4
-            f = sqrt(e*e) - sqrt((k[h][a][b])*(k[h][a][b]))
+            f = sqrt((e-k[h][a][b])*(e-k[h][a][b]))
+            #print("Tiefe: ", h, " X-Achse: ", a, " Y-Achse: ", b, " Höhe: " , k[h][a][b], " Abweichung: ", f)
             if f <= z:
                 r += f
 
@@ -87,49 +140,7 @@ else:
             print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
     print("Output (Berechnungstiefe: ", h," )")
 
-#-------------------------------------------------------------
-#-------------------------------------------------------------
-#-------------------------------------------------------------
-
-speed(0)
-hideturtle()
-
-screen = getscreen()
-screen.tracer(True)
-
-#-------------------------------------------------------------
-
-global xhome
-global yhome
-
-xhome = -300
-zhome = -250
-
-home = (xhome, zhome)
-
-global xline
-global yline
-global zline
-
-xline = 400
-yline = 250
-zline = 300
-
-global zmax
-
-zmax = p
-
-global ax
-global ay
-
-ax = i - 1 #Anzahl x Werte -1
-ay = j - 1 #Anzahl y Werte -1
-
-global xyangle
-
-xyangle = 45 #degrees
-
-#-------------------------------------------------------------
+#----------
 
 def zpoint(x, y, zk): 
     xstartup = (x/ax)*xline
@@ -138,10 +149,10 @@ def zpoint(x, y, zk):
     yzstartup = (y/(j-1))*yline*sin(xyangle*(pi/180))
 
     cor = (xstartup + yxstartup  + xhome,  zstartup + yzstartup + zhome ) 
-    print(zstartup + yzstartup + zhome)
+
     return cor
            
-#-------------------------------------------------------------
+#-----
 
 for a in range(0, i):
     for b in range(0, j):
@@ -172,7 +183,7 @@ for a in range(0, i):
         
                
 
-#-------------------------------------------------------------
+#-----
 
 pu()
 goto(home)
@@ -206,10 +217,10 @@ fd(zline)
 right(90)
 bk(xline)
 
-#-------------------------------------------------------------
+#---------------
 
-update()
 hideturtle()
+update()
 exitonclick()
 
 

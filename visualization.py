@@ -1,3 +1,7 @@
+from turtle import*
+from math import*
+from random import*
+
 speed(0)
 hideturtle()
 
