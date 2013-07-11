@@ -8,8 +8,8 @@ global k
 
 # Frei wählbar...
 
-i = 10 #randint(3, 25) # Werte in x Richtung
-j = 10 #randint(3, 25) # Werte in y Richtung
+i = 20 #randint(3, 25) # Werte in x Richtung
+j = 20 #randint(3, 25) # Werte in y Richtung
 
 maxinput = 100
 
@@ -117,7 +117,7 @@ zline = 300
 
 global zmax
 
-zmax = maxinput
+zmax = p
 
 global ax
 global ay
