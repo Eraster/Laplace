@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from math import*
 from random import*
 from turtle import*
@@ -120,7 +122,7 @@ while z*((i - 2)*(j - 2)) < r :
     for a in range(1, i - 1):
         for b in range(1, j - 1):
             e = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4
-            f = sqrt((e-k[h][a][b])*(e-k[h][a][b]))
+            f = (e-k[h][a][b])*(e-k[h][a][b])
             #print("Tiefe: ", h, " X-Achse: ", a, " Y-Achse: ", b, " Höhe: " , k[h][a][b], " Abweichung: ", f)
             if f <= z:
                 r += f
