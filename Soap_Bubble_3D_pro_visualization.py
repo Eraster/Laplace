@@ -1,3 +1,5 @@
+#https://www.google.ch/search?q=matplotlib%20animation&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:de:official&client=firefox-a&channel=np&source=hp#client=firefox-a&hs=4jz&rls=org.mozilla:de%3Aofficial&channel=np&biw=1366&bih=647&sclient=psy-ab&q=matplotlib+funcanimation&oq=matplotlib+func&gs_l=serp.3.0.0l2j0i30l2.25291.27343.0.29806.6.5.0.1.1.0.189.688.0j5.5.0....0...1c.1.19.psy-ab.JpS0kO7FiFA&pbx=1&bav=on.2,or.r_qf.&bvm=bv.48705608,d.bGE&fp=eee66d236af74eaf
+
 from math import*
 from random import*
 
@@ -7,9 +9,11 @@ from random import*
 i = 20 #randint(3, 25) # Werte in x Richtung
 j = 20#randint(3, 25) # Werte in y Richtung
 
+repeat = 100
+
 maxinput = 100
 
-z = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
+z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
 
 
@@ -46,7 +50,7 @@ k.append(v)
 
 #-----
 
-while z*((i - 2)*(j - 2)) < r :
+while z*((i - 2)*(j - 2)) < r and h < repeat :
     
     h += 1
 
@@ -92,36 +96,36 @@ else:
 
     
 
-from mpl_toolkits.mplot3d.axes3d import Axes3D
+"""
+A very simple 'animation' of a 3D plot
+"""
+import matplotlib
+matplotlib.use('QT4agg')
+from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
-
-
-# imports specific to the plots in this example
-
-
-wz = np.array(k[h])
-
-
-
 import numpy as np
-from matplotlib import cm
-from mpl_toolkits.mplot3d.axes3d import get_test_data
+import matplotlib.animation as animation
+import time
 
-# Twice as wide as it is tall.
 fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+xs = range(0, i)
+ys = range(0, j)
+X, Y = np.meshgrid(xs, ys)
 
-#---- First subplot
-ax = fig.add_subplot(1, 1, 1, projection='3d')
-X = np.arange(0, i, 1)
-Y = np.arange(0, j, 1)
-X, Y = np.meshgrid(X, Y)
+wframes = []
 
-surf = ax.plot_surface(X, Y, wz, rstride=1, cstride=1, cmap=cm.coolwarm,
+for rep in range(0, h):
+    
+    wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
         linewidth=0.1, antialiased=False)
+    wframes.append([wframe])
 
-#---- Second subplot
 
+ani = animation.ArtistAnimation(fig, wframes, interval=500, blit=True)
 plt.show()
+
+
 
 
 

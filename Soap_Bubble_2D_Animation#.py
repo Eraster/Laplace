@@ -1,7 +1,7 @@
 #https://www.google.ch/search?q=matplotlib%20animation&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:de:official&client=firefox-a&channel=np&source=hp#client=firefox-a&hs=4jz&rls=org.mozilla:de%3Aofficial&channel=np&biw=1366&bih=647&sclient=psy-ab&q=matplotlib+funcanimation&oq=matplotlib+func&gs_l=serp.3.0.0l2j0i30l2.25291.27343.0.29806.6.5.0.1.1.0.189.688.0j5.5.0....0...1c.1.19.psy-ab.JpS0kO7FiFA&pbx=1&bav=on.2,or.r_qf.&bvm=bv.48705608,d.bGE&fp=eee66d236af74eaf
 
-from math import*
-from random import*
+import math as math
+import random as random
 
 
 # Einstellungen
@@ -11,9 +11,7 @@ j = 20#randint(3, 25) # Werte in y Richtung
 
 maxinput = 100
 
-z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
-
-repeat = 100
+z = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
 
 
@@ -43,14 +41,14 @@ for a in range(0, i):
     v.append(u)
 k.append(v)
         
-print("Input (Berechnungstiefe: 0 )")
-for a in range(0, i):
-    for b in range(0, j):
-        print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
+#print("Input (Berechnungstiefe: 0 )")
+#for a in range(0, i):
+#    for b in range(0, j):
+        #print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
 
 #-----
 
-while z*((i - 2)*(j - 2)) < r and h < repeat :
+while z*((i - 2)*(j - 2)) < r :
     
     h += 1
 
@@ -94,39 +92,68 @@ else:
             print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
     print("Output (Berechnungstiefe: ", h + 1," )")
 
+
     
+xwerte = []
+zwerte = []
 
-"""
-A very simple 'animation' of a 3D plot
-"""
-import matplotlib
-matplotlib.use('QT4agg')
-from mpl_toolkits.mplot3d import axes3d
-import matplotlib.pyplot as plt
+for l in range(0, h+1):
+    xwertezwischen = []
+    zwertezwischen = []
+    for m in range(0, i):
+        awert = k[l][m][int(j/2)]
+        xwertezwischen.append(awert)
+        
+        
+        zwertezwischen.append(m)
+        
+    xwerte.append(zwertezwischen) #ueberskreuz
+    zwerte.append(xwertezwischen)
+        
+              
+        
+
+#"""
+#Matplotlib Animation Example
+#
+#author: Jake Vanderplas
+#email: vanderplas@astro.washington.edu
+#website: http://jakevdp.github.com
+#license: BSD
+#Please feel free to use and modify this, but keep the above information. Thanks!
+#"""
+
 import numpy as np
-import matplotlib.animation as animation
-import time
+from matplotlib import pyplot as plt
+from matplotlib import animation
 
-def generate(X, Y, phi):
-    R = 1 - np.sqrt(X**2 + Y**2)
-    return np.cos(2 * np.pi * X + phi) * R
-
-
+# First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-xs = np.linspace(-1, 1, 50)
-ys = np.linspace(-1, 1, 50)
-X, Y = np.meshgrid(xs, ys)
+ax = plt.axes(xlim=(0, i-1), ylim=(0, maxinput))
+line, = ax.plot(xwerte[0], zwerte[0], lw=1)
 
-wframes = []
+# initialization function: plot the background of each frame
+def init():
+    line.set_data(xwerte[0], zwerte[0])
+    return line,
 
-for phi in np.linspace(0, 360 / 2 / np.pi, 100):
-    Z = generate(X, Y, phi)
-    wframe = ax.plot_wireframe(X, Y, Z, rstride=2, cstride=2)
-    wframes.append([wframe])
+# animation function.  This is called sequentially
+def animate(w):
+    
+    line.set_data(xwerte[w], zwerte[w])
+    return line,
 
+# call the animator.  blit=True means only re-draw the parts that have changed.
+anim = animation.FuncAnimation(fig, animate, init_func=init,
+                               frames=h, interval=500, blit=True)
 
-ani = animation.ArtistAnimation(fig, wframes, interval=25, blit=True)
+# save the animation as an mp4.  This requires ffmpeg or mencoder to be
+# installed.  The extra_args ensure that the x264 codec is used, so that
+# the video can be embedded in html5.  You may need to adjust this for
+# your system: for more information, see
+# http://matplotlib.sourceforge.net/api/animation_api.html
+#anim.save('basic_animation.mp4', fps=2, extra_args=['-vcodec', 'libx264'])
+
 plt.show()
 
 

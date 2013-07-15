@@ -6,10 +6,10 @@ from turtle import*
 
 speed()
 
-hideturtle()
+#hideturtle()
 
 screen = getscreen()
-screen.tracer(False)
+screen.tracer(True)
 
 #----------
 
@@ -30,7 +30,7 @@ global xyangle
 #-----
 
 global k
-#global h
+global h
 
 #-------------------------------------------------------------
 
@@ -41,7 +41,7 @@ j = 20 #randint(3, 25) # Werte in y Richtung
 
 maxinput = 100
 
-Abweichung = 0.001 #Abweichung der Annäherung (average(i,j)-4*(i,j))
+Abweichung = 0.1 #Abweichung der Annäherung (average(i,j)-4*(i,j))
 
 #-----
 
@@ -116,7 +116,7 @@ while z*((i - 2)*(j - 2)) < r :
 
     for a in range(1, i - 1):
         for b in range(1, j - 1):
-            k[h][a][b] = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4 
+            k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4 
 
     r = 0
     for a in range(1, i - 1):
@@ -136,11 +136,11 @@ while z*((i - 2)*(j - 2)) < r :
 
 else:
     
-    print("Output (Berechnungstiefe: ", h," )")
+    print("Output (Berechnungstiefe: ", h + 1," )")
     for a in range(0, i):
         for b in range(0, j):
             print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
-    print("Output (Berechnungstiefe: ", h," )")
+    print("Output (Berechnungstiefe: ", h + 1," )")
 
 #----------
 
@@ -221,7 +221,7 @@ bk(xline)
 
 #---------------
 
-hideturtle()
+#hideturtle()
 update()
 exitonclick()
 

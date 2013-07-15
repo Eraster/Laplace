@@ -7,7 +7,7 @@ from random import*
 i = 20 #randint(3, 25) # Werte in x Richtung
 j = 20#randint(3, 25) # Werte in y Richtung
 
-maxinput = 100000
+maxinput = 100
 
 z = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
@@ -64,7 +64,7 @@ while z*((i - 2)*(j - 2)) < r :
 
     for a in range(1, i - 1):
         for b in range(1, j - 1):
-            k[h][a][b] = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4 
+            k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4 
 
     r = 0
     for a in range(1, i - 1):
@@ -88,7 +88,7 @@ else:
     #for a in range(0, i):
     #    for b in range(0, j):
             #print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
-    print("Output (Berechnungstiefe: ", h," )")
+    print("Output (Berechnungstiefe: ", h + 1," )")
 
 
 

@@ -9,11 +9,21 @@ from random import*
 i = 20 #randint(3, 25) # Werte in x Richtung
 j = 20#randint(3, 25) # Werte in y Richtung
 
+istart = 8 # 0 - i
+iend = 11 # istart - i  
+
+jstart = 8 # 0 - i
+jend = 11 # istart - j
+
+inter = 100 #fps in milliseconds
+
 maxinput = 100
 
-z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
+repeat = 1000
 
-repeat = 100
+konstant = 10
+
+z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
 
 
@@ -39,18 +49,26 @@ r = p # Kontrollkonstante
 for a in range(0, i):
     u = []
     for b in range(0, j):
-        u.append(randint(q, p))
+        u.append(0)
     v.append(u)
 k.append(v)
+
+
+
+for a in range(istart, iend):
+        for b in range(jstart, jend):
+            k[h][a][b] = k[h][a][b] + konstant
         
-print("Input (Berechnungstiefe: 0 )")
-for a in range(0, i):
-    for b in range(0, j):
-        print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
+#print("Input (Berechnungstiefe: 0 )")
+#for a in range(0, i):
+#    for b in range(0, j):
+        #print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
+        
+
 
 #-----
 
-while z*((i - 2)*(j - 2)) < r and h < repeat :
+while z*((i - 2)*(j - 2)) < r and repeat > h :
     
     h += 1
 
@@ -68,26 +86,24 @@ while z*((i - 2)*(j - 2)) < r and h < repeat :
 
     for a in range(1, i - 1):
         for b in range(1, j - 1):
-            k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4 
+            k[h][a][b] = ((k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4)
 
     r = 0
     for a in range(1, i - 1):
         for b in range(1, j - 1):
-            e = (k[h][a + 1][b] + k[h][a - 1][b] + k[h][a][b + 1] + k[h][a][b - 1]) / 4
-            f = e - k[h][a][b]
+            f = k[h - 1][a][b] - k[h][a][b]
             #print("Tiefe: ", h, " X-Achse: ", a, " Y-Achse: ", b, " Hoehe: " , k[h][a][b], " Abweichung: ", f)
             if f <= z and f >= -1*z:
                 r += f
-
+            
             else:
                 r = p*i*j
-    
-            
-            
-            
+                
+    for a in range(istart, iend):
+        for b in range(jstart, jend):
+            k[h][a][b] = k[h][a][b] + konstant
 
-else:
-    
+else:   
     print("Output (Berechnungstiefe: ", h + 1," )")
     for a in range(0, i):
         for b in range(0, j):
@@ -107,27 +123,25 @@ import numpy as np
 import matplotlib.animation as animation
 import time
 
-def generate(X, Y, phi):
-    R = 1 - np.sqrt(X**2 + Y**2)
-    return np.cos(2 * np.pi * X + phi) * R
-
-
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-xs = np.linspace(-1, 1, 50)
-ys = np.linspace(-1, 1, 50)
+xs = range(0, i)
+ys = range(0, j)
 X, Y = np.meshgrid(xs, ys)
 
 wframes = []
 
-for phi in np.linspace(0, 360 / 2 / np.pi, 100):
-    Z = generate(X, Y, phi)
-    wframe = ax.plot_wireframe(X, Y, Z, rstride=2, cstride=2)
+for rep in range(0, h):
+    
+    wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
+        linewidth=0.1, antialiased=False)
     wframes.append([wframe])
 
 
-ani = animation.ArtistAnimation(fig, wframes, interval=25, blit=True)
+ani = animation.ArtistAnimation(fig, wframes, interval=inter, blit=True)
 plt.show()
+
+
 
 
 
