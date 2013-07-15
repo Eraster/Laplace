@@ -11,7 +11,9 @@ j = 20#randint(3, 25) # Werte in y Richtung
 
 maxinput = 100
 
-z = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
+maxtiefe = 300
+
+z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
 
 
@@ -48,7 +50,7 @@ k.append(v)
 
 #-----
 
-while z*((i - 2)*(j - 2)) < r :
+while z*((i - 2)*(j - 2)) < r and h < maxtiefe :
     
     h += 1
 
@@ -145,7 +147,7 @@ def animate(w):
 
 # call the animator.  blit=True means only re-draw the parts that have changed.
 anim = animation.FuncAnimation(fig, animate, init_func=init,
-                               frames=h, interval=500, blit=True)
+                               frames=h, interval=100, blit=True)
 
 # save the animation as an mp4.  This requires ffmpeg or mencoder to be
 # installed.  The extra_args ensure that the x264 codec is used, so that

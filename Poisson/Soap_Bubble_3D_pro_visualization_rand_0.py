@@ -9,9 +9,15 @@ from random import*
 i = 20 #randint(3, 25) # Werte in x Richtung
 j = 20#randint(3, 25) # Werte in y Richtung
 
-repeat = 100
+istart = 10 # 0 - i
+iend = 11 # istart - i  
 
-maxinput = 100
+jstart = 10 # 0 - i
+jend = 11 # istart - j
+
+konstante = 100
+
+repeat = 100
 
 z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
@@ -19,7 +25,7 @@ z = 0.1 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
 
 # Programmstart...
 
-p = maxinput #randint(5, maxinput) # randint maximum
+p = konstante #randint(5, maxinput) # randint maximum
 q = 0        #randint minimum
 
 #----------
@@ -39,7 +45,7 @@ r = p # Kontrollkonstante
 for a in range(0, i):
     u = []
     for b in range(0, j):
-        u.append(randint(q, p))
+        u.append(0)
     v.append(u)
 k.append(v)
         
@@ -47,6 +53,10 @@ k.append(v)
 #for a in range(0, i):
 #    for b in range(0, j):
         #print("(", a + 1, ", ", b + 1, ") =", k[h][a][b])
+        
+for a in range(istart, iend + 1):
+    for b in range(jstart, jend + 1):
+        k[0][a][b] = 100
 
 #-----
 
@@ -68,7 +78,11 @@ while z*((i - 2)*(j - 2)) < r and h < repeat :
 
     for a in range(1, i - 1):
         for b in range(1, j - 1):
-            k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4 
+            k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4
+            
+    for a in range(istart, iend + 1):
+        for b in range(jstart, jend + 1):
+            k[h][a][b] = 100
 
     r = 0
     for a in range(1, i - 1):
@@ -101,11 +115,11 @@ A very simple 'animation' of a 3D plot
 """
 import matplotlib
 matplotlib.use('QT4agg')
-from mpl_toolkits.mplot3d import axes3d
+#from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.animation as animation
-import time
+#import time
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
