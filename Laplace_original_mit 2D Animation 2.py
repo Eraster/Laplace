@@ -4,8 +4,7 @@ from math import*
 #from random import*
 
 
-Grafik = 2 #1 = 3d, 2 = 2D Hight, 3 = 2D Changing
-
+# Einstellungen
 
 i = 50 #randint(3, 25) # Werte in x Richtung
 j = 50#randint(3, 25) # Werte in y Richtung
@@ -26,8 +25,8 @@ konstant = 100
 
 d = 2  #abstand
 
-Genauigkeit = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
-z = np.abs(Genauigkeit)
+z = 0.001 #Abweichung der Annaeherung (average(i,j)-4*(i,j))
+
 
 
 # Programmstart...
@@ -145,114 +144,92 @@ A very simple 'animation' of a 3D plot
 
 #3D Plot
 
+matplotlib.use('QT4agg')
+import matplotlib
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.animation as animation
+import time
 
-if Grafik == 1:
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+xs = range(0, i)
+ys = range(0, j)
+X, Y = np.meshgrid(xs, ys)
 
-    matplotlib.use('QT4agg')
-    import matplotlib
-    from mpl_toolkits.mplot3d import axes3d
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import matplotlib.animation as animation
-    import time
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
-    xs = range(0, i)
-    ys = range(0, j)
-    X, Y = np.meshgrid(xs, ys)
-    
-    wframes = []
-    
-    for rep in range(0, h, 10):
-        
-        wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
-            linewidth=0.1, antialiased=False)
-        wframes.append([wframe])
-    
-    
-    ani = animation.ArtistAnimation(fig, wframes, interval=inter, blit=True)
-    plt.show()
+wframes = []
 
+for rep in range(0, h, 10):
     
-    
-if Grafik == 2:    
-    
-    """
-    A very simple 'animation' of a 3D plot
-    """
-    import matplotlib
-    matplotlib.use('QT4agg')
-    from mpl_toolkits.mplot3d import axes3d
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import matplotlib.animation as animation
-    import time
-    
-    ##Hight
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    xs = range(0, i)
-    ys = range(0, j)
-    X, Y = np.meshgrid(xs, ys)
-    
-    wframes = []
-    
-    for rep in range(0, 300, 3):
-        
-        #wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
-        #    linewidth=0.1, antialiased=False)
-        #wframes.append([wframe])
-    
-        wframe = plt.imshow(np.array(k[rep]))
-        wframes.append([wframe])
-    
-    ani = animation.ArtistAnimation(fig, wframes, interval=500, blit=True)
-    plt.show()
+    wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
+        linewidth=0.1, antialiased=False)
+    wframes.append([wframe])
+
+
+ani = animation.ArtistAnimation(fig, wframes, interval=inter, blit=True)
+plt.show()
+
+#"""
+#A very simple 'animation' of a 3D plot
+#"""
+#import matplotlib
+#matplotlib.use('QT4agg')
+#from mpl_toolkits.mplot3d import axes3d
+#import matplotlib.pyplot as plt
+#import numpy as np
+#import matplotlib.animation as animation
+#import time
+#
+#
+###Hight
+#
+#fig = plt.figure()
+#ax = fig.add_subplot(111)
+#xs = range(0, i)
+#ys = range(0, j)
+#X, Y = np.meshgrid(xs, ys)
+#
+#wframes = []
+#
+#for rep in range(0, 300, 3):
+#    
+#    #wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
+#    #    linewidth=0.1, antialiased=False)
+#    #wframes.append([wframe])
+#
+#    wframe = plt.imshow(np.array(k[rep]))
+#    wframes.append([wframe])
+#
+#ani = animation.ArtistAnimation(fig, wframes, interval=500, blit=True)
+#plt.show()
 
 
 
-if Grafik == 3:
-    
-    """
-    A very simple 'animation' of a 3D plot
-    """
-    import matplotlib
-    matplotlib.use('QT4agg')
-    from mpl_toolkits.mplot3d import axes3d
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import matplotlib.animation as animation
-    import time    
-    
-    #Changing
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    xs = range(0, i)
-    ys = range(0, j)
-    X, Y = np.meshgrid(xs, ys)
-    
-    wframes = []
-    
-    for rep in range(0, h, 50):
-        
-        #wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
-        #    linewidth=0.1, antialiased=False)
-        #wframes.append([wframe])
-    
-        ar = np.array(l[rep])
-    
-    
-        wframe = plt.imshow((ar), vmax=(z+3), vmin= (-1*z-3), interpolation = "nearest")
-        wframes.append([wframe])
-    
-    ani = animation.ArtistAnimation(fig, wframes, interval=500, blit=True)
-    plt.show()
-    
-else:
-    pass
+##Changing
+
+#fig = plt.figure()
+#ax = fig.add_subplot(111)
+#xs = range(0, i)
+#ys = range(0, j)
+#X, Y = np.meshgrid(xs, ys)
+#
+#wframes = []
+#
+#for rep in range(0, h, 50):
+#    
+#    #wframe = ax.plot_surface(X, Y, np.array(k[rep]), rstride=1, cstride=1, cmap=cm.coolwarm,
+#    #    linewidth=0.1, antialiased=False)
+#    #wframes.append([wframe])
+#
+#    ar = np.array(l[rep])
+#
+#
+#    wframe = plt.imshow((ar), vmax=(z+3), vmin= (-1*z-3), interpolation = "nearest")
+#    wframes.append([wframe])
+#
+#ani = animation.ArtistAnimation(fig, wframes, interval=500, blit=True)
+#plt.show()
 
 
 
