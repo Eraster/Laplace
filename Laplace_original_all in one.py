@@ -4,7 +4,7 @@ from math import*
 #from random import*
 
 
-Grafik = 3 #1 = 3d, 2 = 2D Hight, 3 = 2D Changing
+Grafik = 1 #1 = 3d, 2 = 2D Hight, 3 = 2D Changing
 
 
 i = 50 #randint(3, 25) # Werte in x Richtung
@@ -176,7 +176,7 @@ if Grafik == 1:
 
     
     
-if Grafik = 2:    
+if Grafik == 2:    
     
     """
     A very simple 'animation' of a 3D plot
