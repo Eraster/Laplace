@@ -19,6 +19,8 @@ def Mask(c):
                 a[i][j] = 1
             else:
                 a[i][j] = 0
+                
+    return a
 
 def Laplace(m):
     
@@ -53,21 +55,94 @@ def Laplace(m):
                 
     return kd
     
-def Phermat(m, x, y):
+def Phermat(m):
     
     place = Laplace(m)
-    xlen = float(len(mass))
-    ylen = float(len(mass))
-    xy = 0*mass
+    xlen = float(len(place))
+    ylen = float(len(place))
+    xy = 0*place
     
     
-    for i in range(xlen):
-        for j in range(ylen):
+    for i in range(len(place)):
+        for j in range(len(place[0])):
             xy[i][j] = (xlen/2-i)**2+(ylen/2-j)**2
     
     pherma = place + xy
     
-    return pherma[x][y]
+    return pherma
+    
+    
+    
+    
+ma = zeros((100,100), float)
+#l = zeros((7, 7), float)
+#l = l + float(100)
+#ma[60: 67, 55: 62] = l
+ma[45: 50, 30: 70] = 10
+#for i in range(100):
+#    for j in range(100):
+#        ma[i][j] = ((i-30)**2+(j-40)**2)
+        
+h = Phermat(ma)
+
+
+
+
+#"""
+#A very simple 'animation' of a 3D plot
+#"""
+#import matplotlib
+#matplotlib.use('QT4agg')
+#from mpl_toolkits.mplot3d import axes3d
+#import matplotlib.pyplot as plt
+#import numpy as np
+#import matplotlib.animation as animation
+#import time
+#
+#fig = plt.figure()
+#ax = fig.add_subplot(111, projection='3d')
+#xs = range(20)
+#ys = range(20)
+#X, Y = np.meshgrid(xs, ys)
+#
+#wframes = []
+#
+#for rep in range(1):
+#    
+#    wframe = ax.plot_surface(X, Y, np.array(k[0]), rstride=1, cstride=1, cmap=cm.coolwarm,
+#        linewidth=0.1, antialiased=False)
+#    wframes.append([wframe])
+#
+#
+#ani = animation.ArtistAnimation(fig, wframes, interval=1000, blit=True)
+#plt.show()
+
+import numpy as np
+from matplotlib import cm
+from mpl_toolkits.mplot3d.axes3d import get_test_data
+import matplotlib.pyplot as plt
+
+# Twice as wide as it is tall.
+fig = plt.figure()
+
+#---- First subplot
+ax = fig.add_subplot(1, 1, 1, projection='3d')
+
+
+X = np.arange(0, 100, 1)
+Y = np.arange(0, 100, 1)
+X, Y = np.meshgrid(X, Y)
+
+plt.axis('equal')
+
+surf = plt.contour(X, Y, h,150,rstride=1, cstride=1, cmap=cm.coolwarm,
+        linewidth=0.1, antialiased=False)
+
+#---- Second subplot
+
+plt.show()
+
+
             
             
     
