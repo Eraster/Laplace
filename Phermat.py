@@ -13,7 +13,7 @@ def Mask(c):
         for j in range(0, len):
             dx = ((l-1)/2-i)**2
             dy = ((l-1)/2-j)**2
-            dis = sqrt(dx+dy)
+            dis = np.sqrt(dx+dy)
             
             if dis < dk:
                 a[i][j] = 1
