@@ -1,0 +1,319 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.24)  24 JUL 2013 17:44
+entering extended mode
+**BerichtPraktikum.tex
+(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\Miktek\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\Miktek\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\Miktek\tex\latex\listings\listings.sty"
+("C:\Program Files\Miktek\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+("C:\Program Files\Miktek\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+("C:\Program Files\Miktek\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+("C:\Program Files\Miktek\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\Miktek\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\Miktek\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\Miktek\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\Miktek\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\Miktek\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\Miktek\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+("C:\Program Files\Miktek\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\Miktek\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\Miktek\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen109
+))
+("C:\Program Files\Miktek\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen110
+)
+("C:\Program Files\Miktek\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks17
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks18
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\Miktek\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\Miktek\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+("C:\Program Files\Miktek\tex\latex\xcolor\svgnam.def"
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+))
+("C:\Program Files\Miktek\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files\Miktek\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\Miktek\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+)
+\c@ContinuedFloat=\count108
+Package caption Info: listings package is loaded.
+)
+(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+\c@lstlisting=\count109
+
+("C:\Program Files\Miktek\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen125
+\scratchbox=\box30
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen126
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks22
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ <Bilder/uzhlog.jpg, id=1, 167.06415pt x 73.35405pt>
+File: Bilder/uzhlog.jpg Graphic file (type jpg)
+ <use Bilder/uzhlog.jpg>
+Package pdftex.def Info: Bilder/uzhlog.jpg used on input line 43.
+(pdftex.def)             Requested size: 355.65944pt x 156.16238pt.
+
+[1
+
+{C:/Users/Jonas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Jo
+nas/Documents/GitHub/Bericht_Praktikum/Bilder/uzhlog.jpg>]
+Overfull \hbox (5.69037pt too wide) in paragraph at lines 101--110
+\OT1/cmr/m/n/12 Gravitationslinsen beze-ich-nen Gebilde, welche vornehm-lichst 
+aus einer Galaxie
+ []
+
+<Bilder/lol.png, id=10, 441.65pt x 441.65pt>
+File: Bilder/lol.png Graphic file (type png)
+ <use Bilder/lol.png>
+Package pdftex.def Info: Bilder/lol.png used on input line 118.
+(pdftex.def)             Requested size: 85.35826pt x 112.01082pt.
+ [1 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/lol.png>]
+<Bilder/workinput.png, id=18, 803.0pt x 602.25pt>
+File: Bilder/workinput.png Graphic file (type png)
+ <use Bilder/workinput.png>
+Package pdftex.def Info: Bilder/workinput.png used on input line 136.
+(pdftex.def)             Requested size: 227.62204pt x 151.97949pt.
+
+<Bilder/workoutput3.png, id=20, 578.16pt x 433.62pt>
+File: Bilder/workoutput3.png Graphic file (type png)
+
+<use Bilder/workoutput3.png>
+Package pdftex.def Info: Bilder/workoutput3.png used on input line 142.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+<Bilder/workoutput2.png, id=21, 578.16pt x 433.62pt>
+File: Bilder/workoutput2.png Graphic file (type png)
+
+<use Bilder/workoutput2.png>
+Package pdftex.def Info: Bilder/workoutput2.png used on input line 149.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+<Bilder/workoutput1.png, id=22, 578.16pt x 433.62pt>
+File: Bilder/workoutput1.png Graphic file (type png)
+
+<use Bilder/workoutput1.png>
+Package pdftex.def Info: Bilder/workoutput1.png used on input line 155.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+ [2 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workinput.png>] [
+3 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput3.png> <C
+:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput2.png>] [4 <C
+:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput1.png>] [5]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 224--226
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 256.
+
+("C:\Program Files\Miktek\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 256.
+
+Overfull \hbox (9.76624pt too wide) in paragraph at lines 251--267
+\OT1/cmr/m/n/12 einge-fuegt und meine Ar-beit been-det. Unter www.github.com/Er
+aster/Laplace
+ []
+
+[6]
+Overfull \hbox (15.38376pt too wide) in paragraph at lines 271--272
+ \OT1/cmr/bx/n/12 Funk-tion: Laplace (Pythonxy)[] \OT1/cmr/m/n/12 Hier noch das
+ Ab-schlusspro-gramm Laplace
+ []
+
+[7] [8] [9] [10]
+(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.aux) ) 
+Here is how much of TeX's memory you used:
+ 4752 strings out of 493921
+ 67999 string characters out of 3148886
+ 167210 words of memory out of 3000000
+ 8025 multiletter control sequences out of 15000+200000
+ 10893 words of font info for 39 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,7n,40p,358b,1486s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/P
+rogram Files/Miktek/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+/Miktek/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/Miktek/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Miktek/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr12.pfb
+><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/Miktek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Miktek/
+fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/Miktek/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb>
+Output written on BerichtPraktikum.pdf (11 pages, 1917828 bytes).
+PDF statistics:
+ 94 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+
