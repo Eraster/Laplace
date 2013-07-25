@@ -64,8 +64,8 @@ while z*((i - 2)*(j - 2)) < r and h < repeat :
 
 
 
-    for a in range(1, i - 1):
-        for b in range(1, j - 1):
+    for a in range(1, i-1):
+        for b in range(1, j-1):
             k[h][a][b] = (k[h-1][a + 1][b] + k[h-1][a - 1][b] + k[h-1][a][b + 1] + k[h-1][a][b - 1]) / 4 
 
     r = 0

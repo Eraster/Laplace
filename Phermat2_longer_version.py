@@ -13,7 +13,7 @@ def Mask(c):
         for j in range(0, len):
             dx = ((l-1)/2-i)**2
             dy = ((l-1)/2-j)**2
-            dis = np.sqrt(dx+dy)
+            dis = sqrt(dx+dy)
             
             if dis < dk:
                 a[i][j] = 1
@@ -73,7 +73,7 @@ def Phermat(m):
     
 def Maskb(c):
     
-    a = c
+    a = 0*c
     len = np.alen(a)
     l = float(len)
     
@@ -83,22 +83,27 @@ def Maskb(c):
         for j in range(0, len):
             dx = ((l-1)/2-i)**2
             dy = ((l-1)/2-j)**2
-            dis = sqrt(dx+dy)
+            dis = sqrt(dx+dy)-20
             
             if dis < dk:
-                pass
+                a[i][j] = 1
             else:
-                a[i][j] = None
+                a[i][j] = 0.4
                 
-    return a    
+    return a   
     
     
 ma = zeros((100,100), float)
-
-ma[45: 50, 30: 70] = 10#ma[45: 50, 30: 70] = 10
+#l = zeros((7, 7), float)
+#l = l + float(100)
+#ma[60: 67, 55: 62] = l
+ma[45: 50, 30: 70] = 10
+#for i in range(100):
+#    for j in range(100):
+#        ma[i][j] = ((i-30)**2+(j-40)**2)
         
-h = Phermat(ma)
-h = Maskb(h)
+h = Phermat(ma)*Maskb(ma)
+
 
 
 #"""
@@ -139,8 +144,8 @@ import matplotlib.pyplot as plt
 fig = plt.figure()
 
 #---- First subplot
-#ax = fig.add_subplot(1, 1, 1, projection='3d')
-#ax.set_zlim(1500,3000)##################
+ax = fig.add_subplot(1, 1, 1, projection='3d')
+
 
 X = np.arange(0, 100, 1)
 Y = np.arange(0, 100, 1)
@@ -148,58 +153,12 @@ X, Y = np.meshgrid(X, Y)
 
 plt.axis('equal')
 
-surf = plt.contour(X, Y, h, 75,rstride=1, cstride=1, cmap=cm.coolwarm,
+surf = plt.contour(X, Y, h,150,rstride=1, cstride=1, cmap=cm.coolwarm,
         linewidth=0.1, antialiased=False)
 
 #---- Second subplot
 
 plt.show()
-
-
-
-
-#from mpl_toolkits.mplot3d import Axes3D
-#from matplotlib import cm
-#import matplotlib.pyplot as plt
-#import numpy as np
-#
-#fig = plt.figure()
-#ax = fig.gca(projection='3d')
-#X = np.arange(0, 100, 1)
-#Y = np.arange(0, 100, 1)
-#X, Y = np.meshgrid(X, Y)
-#
-#Z = h
-#
-### 1) Initial surface
-## Flatten mesh arrays, necessary for plot_trisurf function
-#X = X.flatten()
-#Y = Y.flatten()
-#Z = Z.flatten()
-#
-## Plot initial 3D surface with triangles (more flexible than quad)
-##surfi = ax.plot_trisurf(X, Y, Z, cmap=cm.jet, linewidth=0.2)
-#
-### 2) Cut off
-## Get desired values indexes
-#cut_idx = np.where(Z < 2200)
-#
-## Apply the "cut off"
-#Xc = X[cut_idx]
-#Yc = Y[cut_idx]
-#Zc = Z[cut_idx]
-#
-#
-## Plot the new surface (it would be impossible with quad grid)
-#surfc = ax.plot_trisurf(Xc, Yc, Zc, cmap=cm.jet, linewidth=0.2)#
-##surfc = plt.contour(Xc, Yc, h, 150,rstride=1, cstride=1, cmap=cm.coolwarm, linewidth=0.1, antialiased=False)
-#
-## You can force limit if you want to compare both graphs...
-#ax.set_xlim(0,100)
-#ax.set_ylim(0,100)
-#ax.set_zlim(1400,3500)
-#
-#plt.show()
 
 
             

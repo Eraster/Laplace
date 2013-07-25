@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Vorwort}{2}
+\contentsline {section}{\numberline {2}Gravitationslinsen}{2}
+\contentsline {paragraph}{Bild einer Linse}{2}
+\contentsline {paragraph}{Beispiel (ASW0001a8c):}{3}
+\contentsline {section}{\numberline {3}Laplace}{5}
+\contentsline {subsection}{\numberline {3.1}Uebung zum Programmieren}{5}
+\contentsline {paragraph}{Python}{6}
+\contentsline {subsection}{\numberline {3.2}Laplace - Poisson}{7}
+\contentsline {paragraph}{Funktion: Laplace (Pythonxy)}{8}
+\contentsline {section}{\numberline {4}Lensing}{10}
+\contentsline {subsection}{\numberline {4.1}Laplace}{10}
+\contentsline {subsection}{\numberline {4.2}Pharmaprinzip}{11}
+\contentsline {subsection}{\numberline {4.3}Usage}{13}
+\contentsline {section}{\numberline {5}Fazit}{15}
+\contentsline {section}{\numberline {6}Appendix}{15}

@@ -8,14 +8,14 @@ import numpy as np
 Grafik = 1 #1 = 3d, 2 = 2D Hight, 3 = 2D Changing
 
 
-i = 100 #randint(3, 25) # Werte in x Richtung
-j = 100#randint(3, 25) # Werte in y Richtung
+i = 20 #randint(3, 25) # Werte in x Richtung
+j = 20#randint(3, 25) # Werte in y Richtung
 
-istart = 35 # 0 - i
-iend = 35 # istart - i  
+istart = 8 # 0 - i
+iend = 11 # istart - i  
 
-jstart = 13 # 0 - i
-jend = 17 # istart - j
+jstart = 8 # 0 - i
+jend = 11 # istart - j
 
 inter = 300 #fps in milliseconds
 

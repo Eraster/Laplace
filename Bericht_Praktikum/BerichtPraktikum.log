@@ -1,7 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.24)  24 JUL 2013 17:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.24)  25 JUL 2013 12:22
 entering extended mode
 **BerichtPraktikum.tex
-(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.tex
+
+(C:\Users\Jonas\Documents\GitHub\Laplace\Bericht_Praktikum\BerichtPraktikum.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -185,7 +186,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count108
 Package caption Info: listings package is loaded.
 )
-(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.aux)
+(C:\Users\Jonas\Documents\GitHub\Laplace\Bericht_Praktikum\BerichtPraktikum.aux
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -199,8 +201,7 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 \c@lstlisting=\count109
-
-("C:\Program Files\Miktek\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\Miktek\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen125
@@ -225,95 +226,144 @@ Package pdftex.def Info: Bilder/uzhlog.jpg used on input line 43.
 [1
 
 {C:/Users/Jonas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Jo
-nas/Documents/GitHub/Bericht_Praktikum/Bilder/uzhlog.jpg>]
-Overfull \hbox (5.69037pt too wide) in paragraph at lines 101--110
+nas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/uzhlog.jpg>]
+(C:\Users\Jonas\Documents\GitHub\Laplace\Bericht_Praktikum\BerichtPraktikum.toc
+)
+\tf@toc=\write3
+ [1]
+Overfull \hbox (5.69037pt too wide) in paragraph at lines 103--112
 \OT1/cmr/m/n/12 Gravitationslinsen beze-ich-nen Gebilde, welche vornehm-lichst 
 aus einer Galaxie
  []
 
-<Bilder/lol.png, id=10, 441.65pt x 441.65pt>
+<Bilder/lol.png, id=13, 441.65pt x 441.65pt>
 File: Bilder/lol.png Graphic file (type png)
  <use Bilder/lol.png>
-Package pdftex.def Info: Bilder/lol.png used on input line 118.
+Package pdftex.def Info: Bilder/lol.png used on input line 120.
 (pdftex.def)             Requested size: 85.35826pt x 112.01082pt.
- [1 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/lol.png>]
-<Bilder/workinput.png, id=18, 803.0pt x 602.25pt>
+ [2 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/lol.png>]
+
+<Bilder/workinput.png, id=21, 803.0pt x 602.25pt>
 File: Bilder/workinput.png Graphic file (type png)
  <use Bilder/workinput.png>
-Package pdftex.def Info: Bilder/workinput.png used on input line 136.
+Package pdftex.def Info: Bilder/workinput.png used on input line 138.
 (pdftex.def)             Requested size: 227.62204pt x 151.97949pt.
 
-<Bilder/workoutput3.png, id=20, 578.16pt x 433.62pt>
+<Bilder/workoutput3.png, id=23, 578.16pt x 433.62pt>
 File: Bilder/workoutput3.png Graphic file (type png)
 
 <use Bilder/workoutput3.png>
-Package pdftex.def Info: Bilder/workoutput3.png used on input line 142.
+Package pdftex.def Info: Bilder/workoutput3.png used on input line 144.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<Bilder/workoutput2.png, id=21, 578.16pt x 433.62pt>
+<Bilder/workoutput2.png, id=24, 578.16pt x 433.62pt>
 File: Bilder/workoutput2.png Graphic file (type png)
 
 <use Bilder/workoutput2.png>
-Package pdftex.def Info: Bilder/workoutput2.png used on input line 149.
+Package pdftex.def Info: Bilder/workoutput2.png used on input line 151.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<Bilder/workoutput1.png, id=22, 578.16pt x 433.62pt>
+<Bilder/workoutput1.png, id=25, 578.16pt x 433.62pt>
 File: Bilder/workoutput1.png Graphic file (type png)
 
 <use Bilder/workoutput1.png>
-Package pdftex.def Info: Bilder/workoutput1.png used on input line 155.
+Package pdftex.def Info: Bilder/workoutput1.png used on input line 157.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
- [2 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workinput.png>] [
-3 <C:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput3.png> <C
-:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput2.png>] [4 <C
-:/Users/Jonas/Documents/GitHub/Bericht_Praktikum/Bilder/workoutput1.png>] [5]
-Overfull \hbox (2.73343pt too wide) in paragraph at lines 224--226
+ [3 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/workinput
+.png>] [4 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/wor
+koutput3.png> <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder
+/workoutput2.png>] [5 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktiku
+m/Bilder/workoutput1.png>] [6]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 226--228
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 256.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 258.
 
 ("C:\Program Files\Miktek\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 256.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 258.
 
-Overfull \hbox (9.76624pt too wide) in paragraph at lines 251--267
+Overfull \hbox (9.76624pt too wide) in paragraph at lines 253--269
 \OT1/cmr/m/n/12 einge-fuegt und meine Ar-beit been-det. Unter www.github.com/Er
 aster/Laplace
  []
 
-[6]
-Overfull \hbox (15.38376pt too wide) in paragraph at lines 271--272
+[7]
+Overfull \hbox (15.38376pt too wide) in paragraph at lines 273--274
  \OT1/cmr/bx/n/12 Funk-tion: Laplace (Pythonxy)[] \OT1/cmr/m/n/12 Hier noch das
  Ab-schlusspro-gramm Laplace
  []
 
-[7] [8] [9] [10]
-(C:\Users\Jonas\Documents\GitHub\Bericht_Praktikum\BerichtPraktikum.aux) ) 
+[8] [9] <Bilder/Laplace.jpg, id=56, 680.5425pt x 368.1253pt>
+File: Bilder/Laplace.jpg Graphic file (type jpg)
+
+<use Bilder/Laplace.jpg>
+Package pdftex.def Info: Bilder/Laplace.jpg used on input line 372.
+(pdftex.def)             Requested size: 341.43306pt x 184.69131pt.
+ [10]
+<Bilder/xxyy.jpg, id=61, 679.78969pt x 359.84438pt>
+File: Bilder/xxyy.jpg Graphic file (type jpg)
+ <use Bilder/xxyy.jpg>
+Package pdftex.def Info: Bilder/xxyy.jpg used on input line 394.
+(pdftex.def)             Requested size: 341.43306pt x 180.73438pt.
+
+[11 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Laplace.j
+pg>]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 405--406
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[12 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/xxyy.jpg>
+] <Bilder/Fermat2.jpg, id=71, 398.23781pt x 310.15875pt>
+File: Bilder/Fermat2.jpg Graphic file (type jpg)
+
+<use Bilder/Fermat2.jpg>
+Package pdftex.def Info: Bilder/Fermat2.jpg used on input line 440.
+(pdftex.def)             Requested size: 341.43306pt x 265.92677pt.
+ <Bilder/Fermat.jpg, id=72, 763.35187pt x 390.70969pt>
+File: Bilder/Fermat.jpg Graphic file (type jpg)
+
+<use Bilder/Fermat.jpg>
+Package pdftex.def Info: Bilder/Fermat.jpg used on input line 446.
+(pdftex.def)             Requested size: 341.43306pt x 174.75653pt.
+File: Bilder/workinput.png Graphic file (type png)
+ <use Bilder/workinput.png>
+Package pdftex.def Info: Bilder/workinput.png used on input line 454.
+(pdftex.def)             Requested size: 341.43306pt x 256.07692pt.
+ [13 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Fermat2.
+jpg>] [14 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Fer
+mat.jpg>] [15] [16] [17]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 583--584
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18]
+(C:\Users\Jonas\Documents\GitHub\Laplace\Bericht_Praktikum\BerichtPraktikum.aux
+) ) 
 Here is how much of TeX's memory you used:
- 4752 strings out of 493921
- 67999 string characters out of 3148886
+ 4813 strings out of 493921
+ 69016 string characters out of 3148886
  167210 words of memory out of 3000000
- 8025 multiletter control sequences out of 15000+200000
+ 8079 multiletter control sequences out of 15000+200000
  10893 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,7n,40p,358b,1486s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files/Miktek/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
-/Miktek/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/Miktek/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Miktek/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr12.pfb
-><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles/Miktek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Miktek/
-fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/Miktek/fonts/type1/
-public/amsfonts/cm/cmtt12.pfb>
-Output written on BerichtPraktikum.pdf (11 pages, 1917828 bytes).
+ 36i,7n,40p,901b,1486s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
+am Files/Miktek/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/Mi
+ktek/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Miktek/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/Miktek/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
+rogram Files/Miktek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/Miktek/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/Miktek/font
+s/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on BerichtPraktikum.pdf (19 pages, 2253663 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
