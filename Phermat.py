@@ -95,7 +95,7 @@ def Maskb(c):
     
 ma = zeros((100,100), float)
 
-ma[45: 50, 30: 70] = 10#ma[45: 50, 30: 70] = 10
+ma[45: 52, 45: 52] = 30#ma[45: 50, 30: 70] = 10
         
 h = Phermat(ma)
 h = Maskb(h)

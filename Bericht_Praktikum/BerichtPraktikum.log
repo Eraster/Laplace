@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.24)  25 JUL 2013 12:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.24)  25 JUL 2013 14:36
 entering extended mode
 **BerichtPraktikum.tex
 
@@ -231,7 +231,7 @@ nas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/uzhlog.jpg>]
 )
 \tf@toc=\write3
  [1]
-Overfull \hbox (5.69037pt too wide) in paragraph at lines 103--112
+Overfull \hbox (5.69037pt too wide) in paragraph at lines 105--114
 \OT1/cmr/m/n/12 Gravitationslinsen beze-ich-nen Gebilde, welche vornehm-lichst 
 aus einer Galaxie
  []
@@ -239,61 +239,61 @@ aus einer Galaxie
 <Bilder/lol.png, id=13, 441.65pt x 441.65pt>
 File: Bilder/lol.png Graphic file (type png)
  <use Bilder/lol.png>
-Package pdftex.def Info: Bilder/lol.png used on input line 120.
+Package pdftex.def Info: Bilder/lol.png used on input line 122.
 (pdftex.def)             Requested size: 85.35826pt x 112.01082pt.
  [2 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/lol.png>]
 
 <Bilder/workinput.png, id=21, 803.0pt x 602.25pt>
 File: Bilder/workinput.png Graphic file (type png)
  <use Bilder/workinput.png>
-Package pdftex.def Info: Bilder/workinput.png used on input line 138.
+Package pdftex.def Info: Bilder/workinput.png used on input line 140.
 (pdftex.def)             Requested size: 227.62204pt x 151.97949pt.
 
 <Bilder/workoutput3.png, id=23, 578.16pt x 433.62pt>
 File: Bilder/workoutput3.png Graphic file (type png)
 
 <use Bilder/workoutput3.png>
-Package pdftex.def Info: Bilder/workoutput3.png used on input line 144.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+Package pdftex.def Info: Bilder/workoutput3.png used on input line 146.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
 
 <Bilder/workoutput2.png, id=24, 578.16pt x 433.62pt>
 File: Bilder/workoutput2.png Graphic file (type png)
 
 <use Bilder/workoutput2.png>
-Package pdftex.def Info: Bilder/workoutput2.png used on input line 151.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+Package pdftex.def Info: Bilder/workoutput2.png used on input line 153.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
 
 <Bilder/workoutput1.png, id=25, 578.16pt x 433.62pt>
 File: Bilder/workoutput1.png Graphic file (type png)
 
 <use Bilder/workoutput1.png>
-Package pdftex.def Info: Bilder/workoutput1.png used on input line 157.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+Package pdftex.def Info: Bilder/workoutput1.png used on input line 159.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
  [3 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/workinput
 .png>] [4 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/wor
 koutput3.png> <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder
 /workoutput2.png>] [5 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktiku
 m/Bilder/workoutput1.png>] [6]
-Overfull \hbox (2.73343pt too wide) in paragraph at lines 226--228
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 228--230
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 258.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 260.
 
 ("C:\Program Files\Miktek\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 258.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 260.
 
-Overfull \hbox (9.76624pt too wide) in paragraph at lines 253--269
+Overfull \hbox (9.76624pt too wide) in paragraph at lines 255--271
 \OT1/cmr/m/n/12 einge-fuegt und meine Ar-beit been-det. Unter www.github.com/Er
 aster/Laplace
  []
 
 [7]
-Overfull \hbox (15.38376pt too wide) in paragraph at lines 273--274
+Overfull \hbox (15.38376pt too wide) in paragraph at lines 275--276
  \OT1/cmr/bx/n/12 Funk-tion: Laplace (Pythonxy)[] \OT1/cmr/m/n/12 Hier noch das
  Ab-schlusspro-gramm Laplace
  []
@@ -302,53 +302,86 @@ Overfull \hbox (15.38376pt too wide) in paragraph at lines 273--274
 File: Bilder/Laplace.jpg Graphic file (type jpg)
 
 <use Bilder/Laplace.jpg>
-Package pdftex.def Info: Bilder/Laplace.jpg used on input line 372.
-(pdftex.def)             Requested size: 341.43306pt x 184.69131pt.
+Package pdftex.def Info: Bilder/Laplace.jpg used on input line 377.
+(pdftex.def)             Requested size: 284.52756pt x 153.90942pt.
  [10]
 <Bilder/xxyy.jpg, id=61, 679.78969pt x 359.84438pt>
 File: Bilder/xxyy.jpg Graphic file (type jpg)
  <use Bilder/xxyy.jpg>
-Package pdftex.def Info: Bilder/xxyy.jpg used on input line 394.
-(pdftex.def)             Requested size: 341.43306pt x 180.73438pt.
+Package pdftex.def Info: Bilder/xxyy.jpg used on input line 399.
+(pdftex.def)             Requested size: 284.52756pt x 150.61197pt.
 
 [11 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Laplace.j
-pg>]
-Overfull \hbox (2.73343pt too wide) in paragraph at lines 405--406
+pg> <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/xxyy.jpg>
+]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 412--413
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[12 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/xxyy.jpg>
-] <Bilder/Fermat2.jpg, id=71, 398.23781pt x 310.15875pt>
+<Bilder/simpl.jpg, id=67, 408.02437pt x 316.93407pt>
+File: Bilder/simpl.jpg Graphic file (type jpg)
+ <use Bilder/simpl.jpg>
+Package pdftex.def Info: Bilder/simpl.jpg used on input line 447.
+(pdftex.def)             Requested size: 284.52756pt x 221.0157pt.
+
+! Undefined control sequence.
+l.450 \clearfloat
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: Bilder/workinput.png Graphic file (type png)
+<use Bilder/workinput.png>
+Package pdftex.def Info: Bilder/workinput.png used on input line 457.
+(pdftex.def)             Requested size: 284.52756pt x 213.4005pt.
+
+! Undefined control sequence.
+l.460 \clearfloat
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[12] [13 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/simp
+l.jpg>] <Bilder/Fermat2.jpg, id=75, 398.23781pt x 310.15875pt>
 File: Bilder/Fermat2.jpg Graphic file (type jpg)
 
 <use Bilder/Fermat2.jpg>
-Package pdftex.def Info: Bilder/Fermat2.jpg used on input line 440.
-(pdftex.def)             Requested size: 341.43306pt x 265.92677pt.
- <Bilder/Fermat.jpg, id=72, 763.35187pt x 390.70969pt>
+Package pdftex.def Info: Bilder/Fermat2.jpg used on input line 468.
+(pdftex.def)             Requested size: 284.52756pt x 221.60564pt.
+ <Bilder/Fermat.jpg, id=76, 763.35187pt x 390.70969pt>
 File: Bilder/Fermat.jpg Graphic file (type jpg)
 
 <use Bilder/Fermat.jpg>
-Package pdftex.def Info: Bilder/Fermat.jpg used on input line 446.
-(pdftex.def)             Requested size: 341.43306pt x 174.75653pt.
-File: Bilder/workinput.png Graphic file (type png)
- <use Bilder/workinput.png>
-Package pdftex.def Info: Bilder/workinput.png used on input line 454.
-(pdftex.def)             Requested size: 341.43306pt x 256.07692pt.
- [13 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Fermat2.
-jpg>] [14 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Fer
-mat.jpg>] [15] [16] [17]
-Overfull \hbox (2.73343pt too wide) in paragraph at lines 583--584
+Package pdftex.def Info: Bilder/Fermat.jpg used on input line 474.
+(pdftex.def)             Requested size: 426.79134pt x 218.44418pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 474--475
+ [][] 
+ []
+
+[14 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Fermat2.j
+pg>] [15 <C:/Users/Jonas/Documents/GitHub/Laplace/Bericht_Praktikum/Bilder/Ferm
+at.jpg>] [16
+
+]
+Overfull \hbox (2.73343pt too wide) in paragraph at lines 495--496
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]
+[17] [18] [19] [20]
 (C:\Users\Jonas\Documents\GitHub\Laplace\Bericht_Praktikum\BerichtPraktikum.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 4813 strings out of 493921
- 69016 string characters out of 3148886
+ 4818 strings out of 493921
+ 69106 string characters out of 3148886
  167210 words of memory out of 3000000
- 8079 multiletter control sequences out of 15000+200000
+ 8083 multiletter control sequences out of 15000+200000
  10893 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,7n,40p,901b,1486s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -361,9 +394,9 @@ mr12.pfb><C:/Program Files/Miktek/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
 rogram Files/Miktek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 /Miktek/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/Miktek/font
 s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on BerichtPraktikum.pdf (19 pages, 2253663 bytes).
+Output written on BerichtPraktikum.pdf (21 pages, 2303177 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
