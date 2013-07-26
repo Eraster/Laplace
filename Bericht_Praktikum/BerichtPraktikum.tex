@@ -135,14 +135,14 @@ http://mite.physik.uzh.ch/data/002980
 
 \begin{figure}[position=h]
 \centering
- \caption{In das Programm eingespreiste Information:\newline
+ \caption{In das Programm eingespeiste Information:\newline
   (rot = Maxima, blau = Minima, gruen = Sattelpunkt)}
  \includegraphics[trim = 40mm 50mm 60mm 40mm, clip, width=8cm]{Bilder/workinput}%www.en.wikibooks.org/LaTeX/Importing_Graphics
 \end{figure}
 
 \begin{figure}[position=h]
 \centering
- \caption{Masseverteilung:}
+ \caption{errechnete Masseverteilung der Galaxie:}
  \includegraphics[width=10cm]{Bilder/workoutput3}%www.en.wikibooks.org/LaTeX/Importing_Graphics
 \end{figure}
 
@@ -252,7 +252,7 @@ Komplexere Berechnung (dargestellt ohne Tiefenverzeichnis 'h'):
 z[i][j] = (z[i+1][j] + z[i-1][j] + z[i][j+1] \
 + z[i][j-1] + k*delta**2)/4  
 \end{lstlisting}
-Wobei 'delta' dem Abstand zwischen den Punkten entspricht. Stellt man diese Punkte dreidimensional dar, so entsteht das typische Bild von diesem Algorithmus, von welchem es zahlreiche Bilder im Internet gibt.
+Wobei delta dem Abstand zwischen den Punkten entspricht und k der Masse des anzuschauenden Punktes mal eine Konstante. Stellt man diese Punkte dreidimensional dar, so entsteht das typische Bild von diesem Algorithmus, von welchem es zahlreiche Bilder im Internet gibt.
 Fertig ist die Berechnung der Raumkruemmung.
 Da meine Programmierkentnisse nicht ausserordentlich gross sind, habe ich viele Programmierschritte durch einfache Befehle geschrieben.
 Dies hatte unweigerlich die Verlangsamung und die extreme Groesse des Programmes zur Folge.
@@ -343,9 +343,9 @@ def Laplace(m):
 
 \section{Lensing}
 
-(Es tut mir leid, diesen Text nicht auch in Deutsch verfasst zu haben. Ich bitte vielmals um Entschuldigung. Dieser Text wurde in Englisch verfasst, da wir in in Englisch verwenden werden (zooniverse).
+(Es tut mir leid, diesen Text nicht auch in Deutsch verfasst zu haben. Ich bitte vielmals um Entschuldigung. Dieser Text wurde in Englisch verfasst, da wir in in Englisch verwenden werden (zooniverse).)
 \\[3mm]
-In this part of my little article, I will give you a closer look on my calculation (fermat and laplace). First of all, the calculation itself isn`t very difficult but the theorie behind is. So what I will do is just describing the Laplace- and Farmacalculation. In the end, you will recognize the sattlepoints, the minimas and the maximum and know their meaning. But you won`t understand the rason why it is this way! 
+In this part of my little article, I will give you a closer look on my calculation (fermat and laplace). First of all, the calculation itself isn`t very difficult but the theorie behind is. So what I will do is just describing the laplace- and farmacalculation. In the end, you will recognize the sattlepoints, the minimas and the maximum and know their meaning. But you won`t understand the rason why it is this way! 
 
 \subsection{Laplace}
 
@@ -435,32 +435,34 @@ plt.show()
 
 \end{lstlisting}
 
-In the appendix you find the whole program for my fermat calculation. (It`s the shortest version I have from this sort of calculation.)
+In the appendix you find the whole program and an example for my fermat calculation. (It`s the shortest version I have from this sort of calculation.)
 
 \subsection{Usage}
 
-As soon as the calculation is complete. You can see the sattlepoints who look like an "8". Maximas are just the highest spots and minimas the pits. It should look like that:
+As soon as the calculation is complete. You can see the sattlepoints who look like an "8". Maximas are just the highest spots and minimas the pits. It should look like at the Picture \ref{Bild}.
 
-\begin{figure}[position=h]
+
+\begin{figure}
 \centering
  \caption{2D Fermat (simple)}
  \includegraphics[width=10cm]{Bilder/simpl}%www.en.wikibooks.org/LaTeX/Importing_Graphics
+\label{Bild}
 \end{figure}
 
-\clearfloat
 
-In Spaghettilens the imput is just a map with these 3 kinds of points. The goal is then to calculate this vice versa. So what Spaghettilens does is just the calculation I explained the other way round. Because this is difficult and you can`t find the absolute true solution. In the project you give some Citizen Scientists pictures from spacewarps like this:
+In Spaghettilens the imput is just a map with these 3 kinds of points. The goal is then to calculate this vice versa. So what Spaghettilens does is just the calculation I explained the other way round. Because this is difficult and you can`t find the absolute true solution. In the project you give some Citizen Scientists pictures from spacewarps like on Picture \ref{Bild2}.
 
-\begin{figure}[position=h]
+\begin{figure}
 \centering
  \caption{Input}
  \includegraphics[width=10cm]{Bilder/workinput}%www.en.wikibooks.org/LaTeX/Importing_Graphics
+\label{Bild2}
 \end{figure}
 
-\clearfloat
+
 http://mite.physik.uzh.ch/data/002996
 \\[0mm]
-They then mark these 3 kinds of points (red = maximum, blue = minimum, green = sattlepoint) and the calculation can run. First we tried this with simulated lenses and looked how close the Citizen Scientists come to the solution. We found out, that if the mass is centered, they manage to mark everything right. Becuase then you only see 1 maximum, minimum and sattlepoint. But if the mass gets more complicated there aren`t just 3 spots anymore. In most of these cases, there are 2 sattlepoints, 2 minimas and 1 maxima. In this case, there often are some difficulties to put them on the right place. This work really is important because there is no way to write an algorithm yet who manages to do this work. The findings are then looked at and may pull us a bit further in science. I wish all of these scientists good look because my time here is over. Good Luck and good bye.
+They then mark these 3 kinds of points (red = maximum, blue = minimum, green = sattlepoint) and the calculation can run. First we tried this with simulated lenses and looked how close the Citizen Scientists come to the solution. We found out, that if the mass is centered, they manage to mark everything right. Becuase then you only see 1 maximum, minimum and sattlepoint. But if the mass gets more complicated there aren`t just 3 spots anymore. In most of these cases, there are 2 sattlepoints, 2 minimas and 1 maxima. In this case, there often are some difficulties to put them on the right place. This work really is important because there is no way to write an algorithm yet who manages to do this work. The findings are then looked at and may pull us a bit further in science. I wish all of these scientists good look because my time here at UZH is over. Good Luck and good bye.
 
 \begin{figure}[position=h]
 \centering
@@ -468,16 +470,10 @@ They then mark these 3 kinds of points (red = maximum, blue = minimum, green = s
  \includegraphics[width=10cm]{Bilder/Fermat2}%www.en.wikibooks.org/LaTeX/Importing_Graphics
 \end{figure}
 
-\begin{figure}[position=h]
-\centering
- \caption{3D Fermat}
- \includegraphics[width=15cm]{Bilder/Fermat}%www.en.wikibooks.org/LaTeX/Importing_Graphics
-\end{figure}
-
 \clearpage
 \section{Fazit}
 In meinem Praktikum habe ich im Bereich meiner Moeglichkeiten so gut es geht mitgearbeitet.
-Schlussendlich konnte ich die Laplacefunktion einbauen und bin sehr stolz darauf.
+Schlussendlich konnte ich die Laplace bzw. Fermatfunktion einbauen und bin sehr stolz darauf.
 Solch ein Praktikum bietet einen besonderen Einblick in das Leben und die Arbeitsweise an der Universitaet Zuerich.
 Es ist mir daher eine Ehre, hier arbeiten zu duerfen.
 Das alles waere nicht moeglich gewesen ohne die grosse Unterstuetzung von Rafael Kueng, Doktor Prasenjit Saha und Professor Doktor Thomas Gehrmann,
@@ -485,11 +481,25 @@ welcher es mir erst ermoeglichte, mein Praktikum hier an der UZH zu starten.
 Zum Abschluss moechte ich Ihnen ganz herzlich danken.
 
 \newpage
+\section{Bibliographie}
+\paragraph{Figure 1-5, 9:}
+http://mite.physik.uzh.ch/data/002980 \newline (www.spacewarps.org)
+\paragraph{Figure 6-8, 10-11:}
+Made with programmes from Jonas Odermatt \newline free download: (https://github.com/Eraster/Laplace)
+\paragraph{LaTeX:}
+http://de.wikibooks.org/wiki/LaTeX/
+
+
+
+\newpage
 \section{Appendix}
+
+
+Final program Fermat(m)
+ 
 
 \begin{lstlisting}
 from numpy import zeros, amax, amin
-import numpy as np
 import numpy as np
 from matplotlib import cm
 from mpl_toolkits.mplot3d.axes3d import get_test_data
@@ -556,7 +566,7 @@ def Fermat(m):
     
     place = Laplace(m)
     xlen = float(len(place))
-    ylen = float(len(place))
+    ylen = float(len(place[0]))
     xy = 0*place
     
     
@@ -626,6 +636,11 @@ plt.show()
 
 \end{lstlisting}
 
+\begin{figure}[position=h]
+\centering
+ \caption{3D plot with the settings from Fermat(m)}
+ \includegraphics[width=15cm]{Bilder/Fermat}%www.en.wikibooks.org/LaTeX/Importing_Graphics
+\end{figure}
 
 \end{document}
 

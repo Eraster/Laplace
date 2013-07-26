@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1008
-NormalPos.bottom=478
+NormalPos.right=651
+NormalPos.bottom=306
 Class=LaTeXView
 Document=BerichtPraktikum.tex
 
 [Frame0_View0,0]
-TopLine=497
-Cursor=17710
+TopLine=633
+Cursor=18742
 
 [SessionInfo]
 FrameCount=1

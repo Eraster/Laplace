@@ -11,5 +11,9 @@
 \contentsline {subsection}{\numberline {4.1}Laplace}{10}
 \contentsline {subsection}{\numberline {4.2}Fermatprinzip}{11}
 \contentsline {subsection}{\numberline {4.3}Usage}{12}
-\contentsline {section}{\numberline {5}Fazit}{16}
-\contentsline {section}{\numberline {6}Appendix}{17}
+\contentsline {section}{\numberline {5}Fazit}{15}
+\contentsline {section}{\numberline {6}Bibliographie}{16}
+\contentsline {paragraph}{Figure 1-5, 9:}{16}
+\contentsline {paragraph}{Figure 6-8, 10-11:}{16}
+\contentsline {paragraph}{LaTeX:}{16}
+\contentsline {section}{\numberline {7}Appendix}{17}
